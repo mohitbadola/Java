@@ -14,13 +14,13 @@ public class MethodRefEx {
         // .map(name -> name.toUpperCase())
         // .toList();
         // System.out.println(upperName);
-        //upperName.forEach(str->System.out.println(str));
+        // upperName.forEach(str->System.out.println(str));
 
         List<String> upName = names.stream()
                 .map(String::toUpperCase) // method reference- String::toUpperCase
                 .toList(); // String::toUpperCase refers to the toUpperCase method of the String class.
-    
-        upName.forEach(System.out::println);//method reference- System.out::println
-        //it refers to the println method of PrintStream(System.out) class
+
+        upName.forEach(System.out::println);// method reference- System.out::println
+        // it refers to the println method of PrintStream(System.out) class
     }
 }
