@@ -7,15 +7,15 @@ import java.io.InputStreamReader;
 
 public class Demo4 {
     public static void main(String[] args) throws NumberFormatException, IOException {
-        // int i=1;
-        // int j=0;
-        // try {
-        //     j = 18/i;
-        // } catch (Exception e) {
-        //     System.out.println("in Exception");
-        // }finally{                        
-        //     System.out.println("Bye");
-        // }
+        int i=1;
+        int j=0;
+        try {
+            j = 18/i;
+        } catch (Exception e) {
+            System.out.println("in Exception");
+        }finally{                        
+            System.out.println("Bye");
+        }
 
         // BufferedReader br = null;
         // try{
