@@ -6,6 +6,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+
+//Runnable -> does not have any return value
+// Future<?> futureObj1 = poolExecutor.submit(()->{System.out.println("Task1 Runnable")});
+
+//Callable -> have capability to return value
+// Future<Integer> futureObj2 = poolExecutor.submit(()->{return 5;});
+
+
 public class FutureInterface {
     public static void main(String[] args) {
         ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(1, 1, 1, TimeUnit.HOURS,
